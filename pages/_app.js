@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     let body = document.body;
-    if (router.asPath.split("/")[1] == "led") {
+    if (router.asPath.split("/")[1] == "refrigerator") {
       body.style.paddingTop = "48px";
       setIsSponser(true);
     } else {

@@ -37,32 +37,14 @@ const Header = ({ isSponser, ...props }) => {
 
   const comapreData = [
     {
-      label: "Haier H65M95E MiniLED vs LG QNED 90 MiniLED ",
-      path: "/led/haier-mini-led-h65m95eux-vs-lg-mini-led-65qned90sqa",
+      label: "Haier 598L 3-Door Convertible Side-by-Side Refrigerator with WiFi-Enabled Smart Sense AI (HRT-683ISU1) vs LG GL-B257EPZ3 650 L 3 Star Inverter Frost Free Side By Side Door Refrigerator",
+      path: "/refrigerator/haier-598l-3-door-convertible-side-by-side-refrigerator-with-wifi-enabled-smart-sense-ai-hrt-683isu1-vs-lg-gl-b257epz3-650-l-3-star-inverter-frost-free-side-by-side-door-refrigerator",
     },
     {
-      label: "Haier H65M95E MiniLED vs Samsung QN90D ",
-      path: "/led/haier-mini-led-h65m95eux-vs-samsung-mini-led-65qn90dau",
+      label: "Haier 598L 3-Door Convertible Side-by-Side Refrigerator with WiFi-Enabled Smart Sense AI (HRT-683ISU1) vs Samsung RS76CG8113SL 653L Side by Side Refrigerator",
+      path: "/refrigerator/haier-598l-3-door-convertible-side-by-side-refrigerator-with-wifi-enabled-smart-sense-ai-hrt-683isu1-vs-samsung-rs76cg8113sl-653l-side-by-side-refrigerator",
     },
-    {
-      label: "Haier H65M95E MiniLED vs Sony BRAVIA 7 Mini LED K-65XR70",
-      path: "/led/haier-mini-led-h65m95eux-vs-sony-bravia-7-mini-led-k-65xr70",
-    },
-    {
-      label:
-        "Haier C11 65 Inch OLED Android Smart LED TV vs LG 65 Inch OLED 4K TV",
-      path: "/led/haier-c11-65-inch-oled-android-smart-led-tv-vs-lg-g3-65-4k-smart-tv",
-    },
-    {
-      label:
-        "Haier C11 65 Inch Oled Android Smart Led Tv vs Samsung 1m 63cm(65) S95c Oled 4k Smart Tv",
-      path: "/led/haier-c11-65-inch-oled-android-smart-led-tv-vs-samsung-65S95cak-1m-63cm-65-s95c-oled-4k-smart-tv",
-    },
-    {
-      label:
-        "Haier C11 65 Inch OLED Android Smart LED TV vs Sony Bravia TV 65 Inches XR Series 4K Ultra HD Smart OLED Google",
-      path: "/led/haier-c11-65-inch-oled-android-smart-led-tv-vs-sony-a80l-ultra-hd-4k-smart-led-tv",
-    },
+   
   ];
 
   const loadOptions = async (inputValue, callback) => {

@@ -215,10 +215,10 @@ export const getServerSideProps = async ({ params }) => {
 
   let selectedMobile = response
   
-  let compareTable = {
-    th: ["Key Highlights", selectedMobile[0]?.Name, selectedMobile[1]?.Name],
-    td: [],
-  };
+  // let compareTable = {
+  //   th: ["Key Highlights", selectedMobile[0]?.Name, selectedMobile[1]?.Name],
+  //   td: [],
+  // };
   // compareTableContent?.forEach((item) => {
   //   compareTable?.td?.push(item?.name);
   //   compareTable?.td?.push(
@@ -252,7 +252,7 @@ export const getServerSideProps = async ({ params }) => {
     
     return {
       props: {
-        compareTable,
+       
         allExpertReviews,
         news,
         selectedMobile,
@@ -260,11 +260,11 @@ export const getServerSideProps = async ({ params }) => {
         params,
         expertReviewsData,
         seo: {
-          title: compareModels[params?.slug.split("-vs-")[1]]?.title,
-          url: `https://tv.comparos.in/compare/${params?.slug}`,
-          canonical: `https://tv.comparos.in/compare/${params?.slug}`,
-          description:
-            compareModels[params?.slug.split("-vs-")[1]]?.description,
+          title: "",
+          url: ``,
+          canonical: ``,
+          description:""
+            
         },
         revalidate: 1800,
       },
@@ -2137,11 +2137,11 @@ export default function Compare(props) {
               <h2>
                 Welcome To <span> Haier</span>
               </h2>
-              <p className={styles.first_child}>
+              {/* <p className={styles.first_child}>
                 Are you on the hunt for the ideal LED TV to enhance your viewing
                 experience? Look no further! At Haier, we offer a wide range of
                 cutting-edge LED TVs designed to meet your entertainment needs.
-              </p>
+              </p> */}
               <p>
                 Fill out the form below to get personalised recommendations and
                 special offers:
