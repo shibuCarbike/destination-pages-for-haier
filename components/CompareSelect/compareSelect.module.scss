@@ -1,0 +1,156 @@
+$border: 1px solid rgb(225, 225, 225);
+
+.compare_section {
+    // margin: 10px;
+    border: $border;
+    display: grid;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 1;
+    grid-template-columns: repeat(4, 1fr);
+
+    .box {
+      padding: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      min-height: 200px;
+      justify-content: center;
+      align-items: center;
+      border-right: $border;
+      cursor: pointer;
+
+    
+      .svg {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        cursor: pointer;
+        right: 5px;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+
+      .image_box {
+        height: 120px;
+        width: 100%;
+        position: relative;
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .name {
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+
+      .price {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      .select_text {
+        font-weight: 500;
+        color: var(--primary-text-color);
+      }
+
+      &:first-child {
+        color: var(--secondary-text-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: auto;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    .selected_model_wrapper {
+      position: relative;
+      display: flex;
+
+      .box {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .vs_border {
+        position: relative;
+        border: 0.5px solid var(--color-mobile);
+
+        .absolute_part {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          display: grid;
+          place-items: center;
+        }
+
+        span {
+          margin-left: -17px;
+          padding: 4px 6px;
+          border-radius: 50%;
+          background: var(--white);
+          color: var(--color-mobile);
+          border: 1px solid var(--color-mobile);
+        }
+      }
+    }
+  }
+  
+
+  .compare_Buttons{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 10px 10px 0px;
+
+      button {
+        border: 0;
+        background: none;
+        transition: all 1s;
+        border: 1px gray solid;
+        padding: 8px 25px;
+        border-radius: 5px;
+
+        &.ready {
+          background: var(--gradient-mobile);
+          color: var(--white);
+          padding: 10px 20px;
+          pointer-events: all;
+          border: none;
+          border-radius: 5px;
+        }
+        &.addReady {
+          background: var(--gradient-mobile);
+          color: var(--white);
+          padding: 10px 20px;
+          pointer-events: all;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+      .compare_section {
+        overflow: auto;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        .box{
+            cursor: pointer;
+          .name{
+            word-wrap: break-word;
+            max-width: 7rem;
+          }
+  
+        }
+      }
+    }

@@ -1,0 +1,41 @@
+{
+  "name": "destination-haier",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3008",
+    "build": "next build",
+    "prebuild": "node ./scripts/make-sitemap.mjs",
+    "start": "next start -p 3008",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@justinribeiro/lite-youtube": "^1.5.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.5",
+    "moment": "^2.29.4",
+    "next": "14.0.1",
+    "preact": "^10.16.0",
+    "rc-slider": "^11.1.8",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dfp": "^0.21.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-image-gallery": "^1.2.12",
+    "react-image-zoom": "^1.3.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-markdown": "^8.0.7",
+    "react-multi-carousel": "^2.8.4",
+    "react-select": "^5.7.3",
+    "react-share": "^5.1.0",
+    "react-social-media-embed": "^2.5.9",
+    "react-youtube": "^10.1.0",
+    "remark-gfm": "^3.0.1",
+    "rss": "^1.2.2",
+    "sass": "^1.63.3"
+  }
+}

@@ -1,0 +1,63 @@
+.wrapper {
+	display: grid;
+	gap: 10px;
+	padding: 10px;
+	box-shadow: var(--primary-box-shadow);
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+	h2 {
+		font-weight: 500;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		text-align: center;
+		color: var(--primary-text-color);
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+	}
+
+	a {
+		color: var(--primary-text-color);
+	}
+
+	.brand_card {
+		text-align: center;
+		padding-bottom: 10px;
+		border: var(--border-light);
+
+		.image_box {
+			position: relative;
+			height: 40px;
+			width: 90%;
+			margin: 5px auto;
+
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+
+	button {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		width: 100%;
+		padding: 5px 10px;
+		color: var(--color-mobile);
+		margin-top: 5px;
+		border: 1px solid var(--color-mobile);
+		background: var(--white);
+
+		svg {
+			fill: var(--color-mobile);
+			margin: -2px 0 0 3px;
+		}
+
+		&:hover {
+			color: var(--white);
+			background: var(--gradient-mobile);
+
+			svg {
+				fill: var(--white);
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.instagramDiv {
+    :global(.rsme-embed) {
+        :global(.instagram-media) {
+            min-width: 304px !important;
+    
+        }
+        blockquote{
+            min-width: 100% !important;
+            &>div{
+                min-width: unset !important;
+            }
+        }
+    }
+}

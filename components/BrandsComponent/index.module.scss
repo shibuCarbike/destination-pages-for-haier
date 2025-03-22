@@ -1,0 +1,112 @@
+.brandsMainComponent {
+    .brandsComponentDesktop {
+        border: var(--border);
+        .brandsInnerComponent {
+            display: grid;
+            grid-template-columns: repeat(var(--counts), 1fr);
+            // border-top: var(--border);
+            // border-left: var(--border);
+            max-height: var(--max-height);
+            transition: max-height 2s;
+
+            &.open {
+                max-height: 4000px;
+            }
+
+
+
+
+            .allBrandsText {
+                border-bottom: var(--border);
+                border-right: var(--border);
+            }
+
+            .brand_card {
+                padding-top: 5px;
+                text-align: center;
+                // box-shadow: var(--primary-box-shadow);
+
+                border-bottom: var(--border);
+                border-right: var(--border);
+                box-sizing: content-box;
+                // width: 100%;
+                // height: 100%;
+                // margin: 0.4rem;
+
+                .image_box {
+                    height: 80px;
+                    width: 100%;
+                    position: relative;
+                    margin: 6px 0;
+
+                    img {
+                        object-fit: contain;
+                        transition: 0.3s all;
+                    }
+                }
+
+                .title {
+                    // background: rgba(0, 0, 0, 0.04);
+                    padding: 6px 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    word-wrap: break-word;
+                    line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+
+                &:hover {
+                    img {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+
+        .allBrandsTextDiv {
+            border-top: var(--border);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+
+            .upArrow {
+                transform: rotate(-90deg) !important;
+                margin-top: 3px;
+                cursor: pointer;
+            }
+
+            .downArrow {
+                transform: rotate(90deg) !important;
+                margin-top: 3px;
+                cursor: pointer;
+            }
+        }
+
+        .allBrandsTextDiv>p {
+            text-align: center;
+            margin: 0px;
+            padding: 0.4rem 0rem;
+            font-weight: 500;
+            color: #0091D5;
+            cursor: pointer;
+        }
+
+    }
+    .brandsMobileComponent{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .brandsMainComponent{
+        .brandsComponentDesktop{
+            display: none;
+        }
+        .brandsMobileComponent{
+            display: block;
+        }
+    }
+}

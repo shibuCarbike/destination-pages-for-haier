@@ -1,0 +1,24 @@
+.noDataFound {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .image_box {
+      position: relative;
+      min-height: 60vh;
+      width: 100%;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    button {
+      display: block;
+      border-radius: 0;
+      border: 0;
+      background: var(--gradient-mobile);
+      margin: 10px auto 20px auto;
+    }
+  }

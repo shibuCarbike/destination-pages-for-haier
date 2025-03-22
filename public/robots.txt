@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /search?
+Disallow: /led
+
+Sitemap: https://tv.comparos.in/sitemap.xml

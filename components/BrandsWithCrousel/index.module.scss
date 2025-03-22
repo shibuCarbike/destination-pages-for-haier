@@ -1,0 +1,195 @@
+.container {
+    display: none;
+    // min-height: 372px;
+    margin: 0 -10px;
+    .viewAllDiv{
+        display: flex;
+        padding: 0.5rem 1rem;
+        gap: 5px;
+        p{
+            color: #0091D5;
+            font-weight: 500 ;
+            font-size: 16px;
+        }
+        img{
+            margin-top: 8px;
+            // transform: rotate(90deg);
+        }
+    }
+
+    &.wihtouth2 {
+        min-height: 333px;
+    }
+
+    .desktop {
+        display: block;
+        .brand_card {
+            
+            padding-top: 5px;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: var(--primary-box-shadow);
+            margin: 0.4rem;
+    
+            .image_box {
+              height: 80px;
+              width: 100%;
+              position: relative;
+              margin: 10px 0 15px 0;
+    
+              img {
+                object-fit: contain;
+                transition: 0.3s all;
+              }
+            }
+    
+            .title {
+              // background: rgba(0, 0, 0, 0.04);
+              padding: 10px 0;
+            }
+    
+            &:hover {
+              img {
+                scale: 1.1;
+              }
+            }
+          }
+    }
+
+    .mobile {
+        display: none;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        .card{
+            text-align: center;
+            .image_box{
+                width: 10rem;
+                height: 5rem;
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+       
+        div {
+            scroll-snap-align: start;
+
+            .image_box {
+                width: 60vw;
+            }
+        }
+    }
+
+
+    h2 {
+        color: var(--primary-text-color);
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        align-items: center;
+
+        // &::after {
+        //     background: var(--primary-border-color);
+        //     height: 2px;
+        //     flex-grow: 1;
+        //     content: "";
+        //     margin-left: 24px;
+        // }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        margin: 10px;
+        padding: 10px;
+        // min-width: 260px;
+        border-radius: var(--primary-radius);
+        border: var(--border);
+        overflow: hidden;
+
+        .image_box {
+            width: 180px;
+            height: 150px;
+            position: relative;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .title {
+            font-size: 18px;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #353535;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-weight: 500;
+            width: 100%;
+        }
+
+        .price {
+            color: var(--color);
+            background-color: var(--white);
+            text-align: left;
+            width: 100%;
+        }
+
+        button {
+            padding: 5px 0;
+            display: block;
+            width: 100%;
+            border-radius: 0;
+            text-align: center;
+            color: var(--color);
+            background-color: var(--gradient);
+            border: 1px solid var(--color);
+
+            &:hover {
+                color: #fff;
+                background: var(--gradient);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+        // min-height: 358px;
+        margin: 0;
+
+        &.wihtouth2 {
+            min-height: 323px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: flex;
+            padding: 0px 4px;
+            .card{
+                margin: 6px;
+                .image_box{
+                    width: 90px;
+                    height: 50px;
+                }
+            }
+            
+        }
+    }
+}

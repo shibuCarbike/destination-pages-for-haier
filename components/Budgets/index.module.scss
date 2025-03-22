@@ -1,0 +1,32 @@
+.wrapper {
+    margin: 10px 0px;
+  
+    .budgetList {
+      padding: 1rem;
+      display: grid;
+      background-color: rgb(244, 244, 244);
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 20px 0 0 0;
+  
+      .budget {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+  
+        span {
+          padding-left: 10px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      .budgetList {
+        text-align: center;
+      }
+    }
+  }
+  

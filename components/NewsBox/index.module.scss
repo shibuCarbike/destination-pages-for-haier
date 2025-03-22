@@ -1,0 +1,90 @@
+.warpper {
+  display: grid;
+  // gap: 10px;
+  grid-template-columns: auto auto;
+  border: var(--border);
+  color: var(--dark-3);
+  overflow: hidden;
+
+  .image_box {
+    height: 200px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: 0.2s all;
+      object-fit: contain;
+    }
+  }
+
+  .details_box {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    p {
+      margin: 0;
+
+      svg {
+        margin-top: -3px;
+        margin-right: 10px;
+      }
+
+      &:nth-child(2) {
+        min-height: 40px;
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--dark-5);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    .desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    button {
+      border-radius: 0;
+      border-color: var(--color-mobile);
+      color: var(--color-mobile);
+
+      &:hover {
+        color: #fff !important;
+        background: var(--gradient-mobile) !important;
+      }
+    }
+  }
+
+  &:hover {
+    img {
+      scale: (1.04);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .warpper {
+    grid-template-columns: auto;
+
+    .image_box {
+      height: 230px;
+      width: 100%;
+    }
+  }
+}

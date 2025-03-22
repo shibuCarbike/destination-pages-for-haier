@@ -1,0 +1,50 @@
+:root {
+	// --color-television: #fdb833;
+	// --color-printer: #8a4fff;
+	// --color-watches: #99c24d;
+	// --color-washing-machine: #9d6381;
+	// --color-air-conditioner: #6bab90;
+	// --color-refrigerator: #593c8f;
+	// --color-laptop: #2b9eb3;
+	// --color-compare: #66d7d1;
+	// --color-news: #f51aa4;
+	// --color-bg: #f8f8f9;
+	// --gradient-television: linear-gradient(-45deg, #f78600, #ffda76);
+	// --gradient-washing-machine: linear-gradient(-45deg, #9d6381, #ff825f);
+	// --gradient-refrigerator: linear-gradient(-45deg, #330867, #30cfd0);
+	// --gradient-printer: linear-gradient(-45deg, #8a4fff, #30cfd0);
+	// --gradient-watches: linear-gradient(-45deg, #11b1ae, #96de56);
+	// --gradient-air-conditioner: linear-gradient(-45deg, #11b1ae, #6bab90);
+	// --gradient-laptop: linear-gradient(140deg, #20e2d7 -7%, #20abe2 96%);
+	// --gradient-black: linear-gradient(#42566a, #42566a);
+
+	--white: #fff;
+	--primary-radius: 4px;
+	--secondary-radius: 8px;
+	--color-mobile: #fdb833;
+	--border: 1px solid #ccc;
+	--border-light: 1px solid #f3f5f3;
+	--primary-color: #0091d5;
+	--primary-border-color: #ccc;
+	--red-1: #f03d3d;
+	--green-1: #0ca778;
+	--primary-text-color: #404040;
+	--primary-color-darker: #0083c1;
+	--gradient-mobile: linear-gradient(-45deg, #f78600, #ffda76);
+	--primary-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	--box-shadow-lighter: 0px 3px 1px -2px rgba(145, 158, 171, 0.2), 0px 2px 2px 0px rgba(145, 158, 171, 0.14),
+		0px 1px 5px 0px rgba(145, 158, 171, 0.12);
+	--filter-box-shadow: 0px 3px 1px -2px rgb(145 158 171 / 20%), 0px 2px 2px 0px rgb(145 158 171 / 14%),
+		0px 1px 5px 0px rgb(145 158 171 / 12%);
+	--primary-space: 20px;
+	--secondary-space: 10px;
+	--secondary-text-color: #878787;
+}
+
+
+@media screen and (max-width: 600px) {
+	:root {
+		font-size: 14px;
+		--primary-space: 15px;
+	}
+}
